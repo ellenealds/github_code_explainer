@@ -174,6 +174,8 @@ with st.spinner('Scraping Github...'):
         # add a column to the dataframe to store the cohere.ai output
         df['cohere_ai'] = df['code'].apply(cohere_ai)
 
+         # display the dataframe
+        st.dataframe(df)
+
         
- # display the dataframe
-st.dataframe(df)
+
