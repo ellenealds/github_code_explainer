@@ -129,7 +129,7 @@ def scrape_github_repo_code(df):
     return df
 
 
-co = cohere.Client('bE6Is3wvtmXyHtgnCQocDIgdH7PcYwdR21ZhnXgN')
+co = cohere.Client('x')
 
 # the following function will iterate over each row when I call apply to a dataframe and return the response.generations[0]. text into a new column
 # add an error handler for 'CohereError:' and returns 'text too large' if the text is too large
